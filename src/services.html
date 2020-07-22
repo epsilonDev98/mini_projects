@@ -1,0 +1,174 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hotel Website | Services</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/responsiveslides.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+		<script src="js/responsiveslides.min.js"></script>
+	</head>
+	<body>
+		<!---start-Wrap--->
+			<!---start-header--->
+			<div class="header">
+				<div class="wrap">
+					<div class="header-top">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo0.png" style="width: 120px;"title="logo" /></a>
+						</div>
+						<div class="contact-info">
+							<p class="phone">Call us : <a href="#">73805XXXXX</a></p>
+							</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="header-top-nav">
+					<div class="wrap">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+						    <li><a href="login.html">register</a></li>
+							<li><a href="booking.html">Booking</a></li>
+							<li><a href="gallery.html">Gallery</a></li>	
+						    <li><a href="payment.html">Payment</a></li>
+						    <li class="active"><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">About</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!---End-header--->
+			<div class="clear"> </div>
+			<!---start-content----->
+			<div class="content">
+				<div class="wrap">
+					<!-----start--services------>
+					<div class="services">
+						<div class="service-content">
+							<h3>Our Hotel Services</h3>
+							<ul>
+								<li><span>1.</span></li>
+								<li><p><a href="#">COMPAIGN</a> Every Day We . . . . .</p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>2.</span></li>
+								<li><p><a href="#">SWIMMING POOL</a> You can enjoy Swimming in the pool and relax with a drink. . .. . .  </p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>3.</span></li>
+								<li><p><a href="#">RESTAURANT</a> You can have . . . </p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>4.</span></li>
+								<li><p><a href="#">DASHBOARD FOR REGULAR CUSTOMER </a>Here You . . . .</p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>5.</span></li>
+								<li><p><a href="#">GET GST REFUND ON RATING</a>Here . . . .</p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>6.</span></li>
+								<li><p><a href="#">POOLSIDE BAR</a> To chill. . .. . </p></li>
+								<div class="clear"> </div>
+							</ul>
+						</div>
+						<form name="frm-pin" method="post" action="pin-index-a.php">
+<input type="hidden" name="mode" value="PinRequest" /> 
+<span class="w3-text-green"><b>Choose price</b></span>
+<select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
+<option value="" disabled selected>Choose your amount</option>
+<option value="1000">1000</option>
+<option value="1500">1500</option>
+<option value="2000">2000</option>
+<option value="2500">2500</option>
+<option value="3000">3000</option>
+<option value="3500">3500</option>
+<option value="4000">4000</option>
+<option value="4500">4500</option>
+<option value="5000">5000</option>
+<option value="5500">5500</option>
+<option value="6000">6000</option>
+<option value="6500">6500</option>
+<option value="7000">7000</option>
+<option value="7500">7500</option>
+<option value="8000">8000</option>
+<option value="8500">8500</option>
+<option value="9000">9000</option>
+<option value="9500">9500</option>
+<option value="10000">10000</option>
+</select>
+<br>
+<span><b> Amount after tax </b></span>
+<input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" readonly>
+<script>
+function calculateAmount(val)
+{ 
+var price = val * 1;
+//display the result
+var tot_price=price-(price*0.18);
+var divobj = document.getElementById('tot_amount');
+divobj.value = tot_price;
+}
+</script>
+
+						<div class="services-sidebar">
+							<h3>WE PROVIDE</h3>
+							 <ul>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+				
+					 		 </ul>
+					 		 
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<!-----End--services------>
+				</div>
+				<div class="clear"> </div>
+				<div class="boxs">
+				<div class="wrap">
+				<div class="box">
+					 
+				</div>
+				<div class="box center-box">
+					<ul>
+						<li><a href="#">Leave a Feedback</a></li>
+						<li><a href="#">Reviews and Ratings</a></li>
+						<li><a href="#">FAQs</a></li>
+						</ul>
+				</div>
+				<div class="box">
+					
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!---start-box---->
+		</div>
+		<!---start-copy-Right----->
+		<div class="copy-tight">
+			<p>&copy S3P,PSITCOE 2018 "THIS PROJECT IS MADE TO YOU BY S3P" <a href="https://www.instagram.com/epsilon.dev/?hl=en">epsilon.dev</a></p>
+		</div>
+		<!---End-copy-Right----->
+			</div>
+			<!---End-content----->
+		</div>
+		<!---End-Wrap--->
+	</body>
+</html>
+
